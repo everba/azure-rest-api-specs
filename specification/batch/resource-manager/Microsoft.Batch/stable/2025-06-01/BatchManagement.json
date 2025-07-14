@@ -5624,7 +5624,8 @@
           "title": "The value of the IP tag associated with the public IP.",
           "description": "Example: SQL."
         }
-      }
+      },
+      "description": "IP Tags that will applied to new Public IPs that Batch creates. The IP tags are used to identify the purpose of the public IPs created by Batch. For example, the IP tag type can be FirstPartyUsage and the display name can be SQL."
     },
     "PublicIPAddressConfiguration": {
       "type": "object",
@@ -5656,6 +5657,7 @@
           "items": {
             "$ref": "#/definitions/IpTag"
           },
+          "x-ms-identifiers": [],
           "title": "IP Tags that will applied to new Public IPs that Batch creates."
         }
       },
